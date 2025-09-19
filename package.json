@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:local": "ng build --output-path docs --base-href ./",
+    "build:gh": "ng build --output-path docs --base-href /Elearn-project/"
   },
   "private": true,
   "dependencies": {
@@ -38,3 +40,4 @@
     "typescript": "~5.4.2"
   }
 }
+
