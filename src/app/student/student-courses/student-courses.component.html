@@ -1,0 +1,14 @@
+<app-aside></app-aside>
+
+<main>
+  <!-- courses section  -->
+  <section class="courses-section">
+    <h3 class="fw-bold mb-3">Here are your Courses:</h3>
+    <div class="courses-container row row-cols-1 row-cols-md-3 g-4 mt-5"></div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      @for (course of studentData.courses; track $index) {
+      <app-student-cards [cardItems]="course"></app-student-cards>
+      }
+    </div>
+  </section>
+</main>
